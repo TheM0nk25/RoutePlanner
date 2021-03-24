@@ -59,11 +59,15 @@ int main(int argc, const char **argv)
     float start_y = 0;
     float end_x = 0;
     float end_y = 0;
-    char ch;
 
-    std::cout << "Please enter start and end coordinates (x,y) using float values" << std::endl;
-    std::cin >> start_x >> ch >> start_y >> end_x >> ch >> end_y;;
-
+    std::cout << "Please enter the start x coordinate." << std::endl;
+    std::cin >> start_x;
+    std::cout << "Please enter the start y coordinate." << std::endl;
+    std::cin >> start_y;
+  	std::cout << "Please enter the end x coordinate." << std::endl;
+    std::cin >> end_x;
+  	std::cout << "Please enter the end y coordinate." << std::endl;
+    std::cin >> end_y;
     // Build Model.
     RouteModel model{osm_data};
 
